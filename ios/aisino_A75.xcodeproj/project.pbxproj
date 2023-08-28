@@ -14,6 +14,16 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-aisino_A75-aisino_A75Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-aisino_A75-aisino_A75Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		64645133F0024116B7912C0F /* Geologica_Auto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB79B75E6F5421B92E76259 /* Geologica_Auto-Black.ttf */; };
+		F7C335B831D04C5C9B4EA1C0 /* Geologica_Auto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FBAC14AAA54490A9E57042C /* Geologica_Auto-Bold.ttf */; };
+		5CD12DEC0F2A4968A3178B41 /* Geologica_Auto-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D72206C934645EDBE3B6A17 /* Geologica_Auto-ExtraBold.ttf */; };
+		B6ABF8108EF34BF7B30A0B44 /* Geologica_Auto-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9558495A3842A39F1AB3EB /* Geologica_Auto-ExtraLight.ttf */; };
+		D1066655FAC645D29B2B8931 /* Geologica_Auto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BEC00B10A034486A4CEED76 /* Geologica_Auto-Light.ttf */; };
+		A1C5F3E60745425FA0118EF0 /* Geologica_Auto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBA4F7FD65734F24B6CA8D6F /* Geologica_Auto-Medium.ttf */; };
+		1E092D1282E14670A5366A70 /* Geologica_Auto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF0B874FC3B14ABDB9CB6BEC /* Geologica_Auto-Regular.ttf */; };
+		A28FD82FA0314557BB9B2ED2 /* Geologica_Auto-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02A78CD1475F435B97C720EB /* Geologica_Auto-SemiBold.ttf */; };
+		096CFA16925449B7869E06F9 /* Geologica_Auto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81EA3B696B0440309DCB6F17 /* Geologica_Auto-Thin.ttf */; };
+		00714E533E5749B892E4B6B7 /* Geologica-VariableFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E27617D41E92488689FB5D48 /* Geologica-VariableFont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = aisino_A75/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-aisino_A75-aisino_A75Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aisino_A75-aisino_A75Tests.release.xcconfig"; path = "Target Support Files/Pods-aisino_A75-aisino_A75Tests/Pods-aisino_A75-aisino_A75Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		7CB79B75E6F5421B92E76259 /* Geologica_Auto-Black.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-Black.ttf"; path = "../assets/fonts/Geologica_Auto-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FBAC14AAA54490A9E57042C /* Geologica_Auto-Bold.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-Bold.ttf"; path = "../assets/fonts/Geologica_Auto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D72206C934645EDBE3B6A17 /* Geologica_Auto-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-ExtraBold.ttf"; path = "../assets/fonts/Geologica_Auto-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3E9558495A3842A39F1AB3EB /* Geologica_Auto-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-ExtraLight.ttf"; path = "../assets/fonts/Geologica_Auto-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2BEC00B10A034486A4CEED76 /* Geologica_Auto-Light.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-Light.ttf"; path = "../assets/fonts/Geologica_Auto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DBA4F7FD65734F24B6CA8D6F /* Geologica_Auto-Medium.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-Medium.ttf"; path = "../assets/fonts/Geologica_Auto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF0B874FC3B14ABDB9CB6BEC /* Geologica_Auto-Regular.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-Regular.ttf"; path = "../assets/fonts/Geologica_Auto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		02A78CD1475F435B97C720EB /* Geologica_Auto-SemiBold.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-SemiBold.ttf"; path = "../assets/fonts/Geologica_Auto-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		81EA3B696B0440309DCB6F17 /* Geologica_Auto-Thin.ttf */ = {isa = PBXFileReference; name = "Geologica_Auto-Thin.ttf"; path = "../assets/fonts/Geologica_Auto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E27617D41E92488689FB5D48 /* Geologica-VariableFont.ttf */ = {isa = PBXFileReference; name = "Geologica-VariableFont.ttf"; path = "../assets/fonts/Geologica-VariableFont.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				818970C8A89D4762B51C6CC8 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +168,24 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		818970C8A89D4762B51C6CC8 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				7CB79B75E6F5421B92E76259 /* Geologica_Auto-Black.ttf */,
+				8FBAC14AAA54490A9E57042C /* Geologica_Auto-Bold.ttf */,
+				5D72206C934645EDBE3B6A17 /* Geologica_Auto-ExtraBold.ttf */,
+				3E9558495A3842A39F1AB3EB /* Geologica_Auto-ExtraLight.ttf */,
+				2BEC00B10A034486A4CEED76 /* Geologica_Auto-Light.ttf */,
+				DBA4F7FD65734F24B6CA8D6F /* Geologica_Auto-Medium.ttf */,
+				EF0B874FC3B14ABDB9CB6BEC /* Geologica_Auto-Regular.ttf */,
+				02A78CD1475F435B97C720EB /* Geologica_Auto-SemiBold.ttf */,
+				81EA3B696B0440309DCB6F17 /* Geologica_Auto-Thin.ttf */,
+				E27617D41E92488689FB5D48 /* Geologica-VariableFont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +283,16 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				64645133F0024116B7912C0F /* Geologica_Auto-Black.ttf in Resources */,
+				F7C335B831D04C5C9B4EA1C0 /* Geologica_Auto-Bold.ttf in Resources */,
+				5CD12DEC0F2A4968A3178B41 /* Geologica_Auto-ExtraBold.ttf in Resources */,
+				B6ABF8108EF34BF7B30A0B44 /* Geologica_Auto-ExtraLight.ttf in Resources */,
+				D1066655FAC645D29B2B8931 /* Geologica_Auto-Light.ttf in Resources */,
+				A1C5F3E60745425FA0118EF0 /* Geologica_Auto-Medium.ttf in Resources */,
+				1E092D1282E14670A5366A70 /* Geologica_Auto-Regular.ttf in Resources */,
+				A28FD82FA0314557BB9B2ED2 /* Geologica_Auto-SemiBold.ttf in Resources */,
+				096CFA16925449B7869E06F9 /* Geologica_Auto-Thin.ttf in Resources */,
+				00714E533E5749B892E4B6B7 /* Geologica-VariableFont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
