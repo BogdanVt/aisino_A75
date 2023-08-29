@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
-import {FC} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {COLORS} from '../../theme/colors';
+import { FC } from "react";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { COLORS } from "../../theme/colors";
 
 interface DefaultCardProps {
   Icon: any;
@@ -21,7 +21,8 @@ export const DefaultCard: FC<DefaultCardProps> = ({
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={[styles.container, horizontal && styles.horizontalStyle]}>
+      style={[styles.container, horizontal && styles.horizontalStyle]}
+    >
       <View style={styles.iconWrapper}>
         <Icon width={24} height={24} />
       </View>
@@ -38,37 +39,37 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     margin: 5,
-    minHeight: 160,
+    minHeight: 140,
     padding: 10,
-    maxWidth: '100%',
+    maxWidth: "100%",
     borderRadius: 20,
     backgroundColor: COLORS.white,
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    justifyContent: "space-between",
+    alignItems: "flex-start",
   },
   horizontalStyle: {
-    minHeight: 100,
-    justifyContent: 'flex-start',
-    flexDirection: 'row',
-    alignItems: 'center',
+    minHeight: 70,
+    justifyContent: "flex-start",
+    flexDirection: "row",
+    alignItems: "center",
     gap: 15,
   },
   iconWrapper: {
     padding: 15,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     borderRadius: 50,
     backgroundColor: COLORS.blackSecondary,
   },
   textHeader: {
-    fontFamily: 'Geologica_Auto-Medium',
+    fontFamily: "Geologica_Auto-Medium",
     color: COLORS.black,
-    fontSize: 24,
+    fontSize: 16,
   },
   textDescription: {
-    fontFamily: 'Geologica_Auto-Medium',
+    fontFamily: "Geologica_Auto-Medium",
     color: COLORS.bluePrimary,
-    fontSize: 12,
+    fontSize: 8,
     lineHeight: 15,
   },
 });

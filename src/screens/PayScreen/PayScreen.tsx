@@ -1,15 +1,15 @@
-import React from 'react';
-import {Image, SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import MetalMoney from '../../assets/mentalMoney.png';
-import {COLORS} from '../../theme/colors';
-import {DefaultCard} from '../../components/DefaultCard/DefaultCard';
+import React from "react";
+import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import MetalMoney from "../../assets/mentalMoney.png";
+import { COLORS } from "../../theme/colors";
+import { DefaultCard } from "../../components/DefaultCard/DefaultCard";
 
-import CardIcon from '../../assets/icons/card.svg';
-import GooglePayIcon from '../../assets/icons/googlepay.svg';
-import OfflineIcon from '../../assets/icons/offline.svg';
-import BiometricIcon from '../../assets/icons/biometric.svg';
+import CardIcon from "../../assets/icons/card.svg";
+import GooglePayIcon from "../../assets/icons/googlepay.svg";
+import OfflineIcon from "../../assets/icons/offline.svg";
+import BiometricIcon from "../../assets/icons/biometric.svg";
 
-const PayScreen = ({navigation}: {navigation: any}) => {
+const PayScreen = ({ navigation }: { navigation: any }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerSection}>
@@ -18,7 +18,7 @@ const PayScreen = ({navigation}: {navigation: any}) => {
       </View>
       <View style={styles.paymentSection}>
         <DefaultCard
-          onPress={() => navigation.navigate('CreditCardScreen')}
+          onPress={() => navigation.navigate("CreditCardScreen")}
           Icon={CardIcon}
           headerText="Credit card"
           descText="Top up instantly"
@@ -51,16 +51,16 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.blueLight,
     flex: 1,
-    paddingTop: 50,
+    paddingTop: 10,
     paddingHorizontal: 10,
   },
   headerSection: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 30,
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 15,
   },
   paymentSection: {
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   settingsSection: {},
   imageStyle: {
@@ -69,8 +69,8 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
   },
   textMain: {
-    fontFamily: 'Geologica_Auto-Regular',
-    fontSize: 36,
+    fontFamily: "Geologica_Auto-Regular",
+    fontSize: 24,
     color: COLORS.black,
   },
 });

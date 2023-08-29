@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import CreditCardScreen from '../screens/CreditCardScreen/CreditCardScreen';
-import BottomTabsNavigatior from './BottomTabNavigator';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import CreditCardScreen from "../screens/CreditCardScreen/CreditCardScreen";
+import BottomTabsNavigatior from "./BottomTabNavigator";
 
 const Stack = createNativeStackNavigator();
 
@@ -11,18 +11,20 @@ export const NavigationNativeStack = () => {
       initialRouteName="BottomTabs"
       screenOptions={{
         headerShown: false,
-        animation: 'fade_from_bottom',
-      }}>
+        animation: "fade_from_bottom",
+      }}
+    >
       <Stack.Screen
         name="CreditCardScreen"
         component={CreditCardScreen}
         options={{
           headerShown: true,
-          headerTitle: 'Top up Wallet',
+          headerTitle: "Top up Wallet",
           headerTitleStyle: {
-            fontFamily: 'Geologica_Auto-Medium',
+            fontSize: 12,
+            fontFamily: "Geologica_Auto-Bold",
           },
-          headerTitleAlign: 'center',
+          headerTitleAlign: "center",
           headerTransparent: true,
         }}
       />

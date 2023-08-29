@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
-import {Image, SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
-import CartImage from '../../assets/cart.png';
-import VirtualKeyboard from 'react-native-virtual-keyboard';
-import {COLORS, GRADIENT_COLORS} from '../../theme/colors';
+import React, { useState } from "react";
+import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import LinearGradient from "react-native-linear-gradient";
+import CartImage from "../../assets/cart.png";
+import VirtualKeyboard from "react-native-virtual-keyboard";
+import { COLORS, GRADIENT_COLORS } from "../../theme/colors";
 
 const CreditCardScreen = () => {
-  const [text, setText] = useState('0.00');
+  const [text, setText] = useState("0.00");
 
   const onPressHandler = (value: string) => {
-    if (value === '') {
-      setText('0.00');
+    if (value === "") {
+      setText("0.00");
       return;
     }
     setText(value);
@@ -24,7 +24,8 @@ const CreditCardScreen = () => {
             colors={GRADIENT_COLORS.iconGradient}
             useAngle
             style={styles.imageWrapper}
-            angleCenter={{x: 0.5, y: 0.8}}>
+            angleCenter={{ x: 0.5, y: 0.8 }}
+          >
             <Image source={CartImage} style={styles.imageStyle} />
           </LinearGradient>
 
@@ -56,56 +57,56 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.blueLight,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   contentWrapper: {
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    justifyContent: "space-between",
+    alignItems: "center",
     flex: 1,
     paddingHorizontal: 10,
-    width: '100%',
+    width: "100%",
     paddingTop: 50,
     paddingBottom: 10,
   },
 
   keyboardWrapper: {
-    alignItems: 'baseline',
+    alignItems: "baseline",
     backgroundColor: COLORS.darkBlue,
     borderRadius: 50,
     paddingBottom: 20,
   },
   headerSection: {
-    marginTop: 30,
+    marginTop: 10,
     gap: 10,
-    alignItems: 'center',
+    alignItems: "center",
   },
   imageWrapper: {
     borderRadius: 50,
-    width: 100,
-    height: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
+    width: 60,
+    height: 60,
+    justifyContent: "center",
+    alignItems: "center",
   },
   imageStyle: {
-    width: 90,
-    height: 90,
+    width: 50,
+    height: 50,
     aspectRatio: 1,
   },
   textHeader: {
     color: COLORS.black,
-    fontFamily: 'Geologica_Auto-Medium',
-    fontSize: 16,
+    fontFamily: "Geologica_Auto-Medium",
+    fontSize: 12,
   },
   summWrapper: {
-    flexDirection: 'row',
-    fontFamily: 'Geologica_Auto-Bold',
+    flexDirection: "row",
+    fontFamily: "Geologica_Auto-Bold",
     fontSize: 32,
   },
   textSumm: {
     color: COLORS.black,
-    fontFamily: 'Geologica_Auto-Bold',
-    fontSize: 52,
+    fontFamily: "Geologica_Auto-Bold",
+    fontSize: 40,
   },
 });
 
