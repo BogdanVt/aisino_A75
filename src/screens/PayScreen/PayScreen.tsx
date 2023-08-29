@@ -33,7 +33,7 @@ const PayScreen = ({ navigation }: { navigation: any }) => {
         <DefaultCard
           horizontal
           Icon={OfflineIcon}
-          headerText="Offine mode"
+          headerText="Offline mode"
           descText="You can pay offline"
         />
         <DefaultCard
