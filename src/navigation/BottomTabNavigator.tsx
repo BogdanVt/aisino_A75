@@ -1,28 +1,31 @@
 /* eslint-disable react/no-unstable-nested-components */
 /* eslint-disable react/react-in-jsx-scope */
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import HomeIcon from "../assets/icons/home.svg";
 import NotificationIcon from "../assets/icons/notification.svg";
 import CompanyIcon from "../assets/icons/company.svg";
 import PaymentIcon from "../assets/icons/pay.svg";
 import { COLORS } from "../theme/colors";
-import NotificationsScreen from "../screens/NotificationsScreen/NotificationsScreen";
-import CompanyScreen from "../screens/CompanyScreen/CompanyScreen";
-import PayScreen from "../screens/PayScreen/PayScreen";
+
+import {
+  CompanyScreen,
+  HomeScreen,
+  NotificationsScreen,
+  PaymentMethodScreen,
+} from "../screens";
 
 const ROUTES = {
-  home: "Home",
-  notifications: "Notifications",
-  company: "Company",
-  pay: "Pay",
+  home: "HomeScreen",
+  company: "CompanyScreen",
+  notifications: "NotificationsScreen",
+  pay: "PaymentMethodScreen",
 };
 
 export type BottomTabParamList = {
-  Home: undefined;
-  Company: undefined;
-  Notifications: undefined;
-  Pay: undefined;
+  HomeScreen: undefined;
+  CompanyScreen: undefined;
+  NotificationsScreen: undefined;
+  PaymentMethodScreen: undefined;
 };
 
 const Tab = createBottomTabNavigator<BottomTabParamList>();
@@ -30,10 +33,11 @@ const Tab = createBottomTabNavigator<BottomTabParamList>();
 function BottomTabsNavigatior() {
   return (
     <Tab.Navigator
-      initialRouteName={"Home"}
+      initialRouteName={"HomeScreen"}
       screenOptions={({ route }) => ({
         tabBarActiveTintColor: COLORS.blueMedium,
         headerShown: false,
+
         tabBarStyle: {
           borderTopStartRadius: 30,
           borderTopEndRadius: 30,
@@ -45,7 +49,6 @@ function BottomTabsNavigatior() {
           position: "absolute",
           borderTopWidth: 0,
         },
-
         tabBarHideOnKeyboard: true,
         tabBarIcon: ({ focused, size }) => {
           let iconColor = focused ? COLORS.blueMedium : COLORS.blackPrimary;
@@ -64,10 +67,34 @@ function BottomTabsNavigatior() {
         },
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Notifications" component={NotificationsScreen} />
-      <Tab.Screen name="Company" component={CompanyScreen} />
-      <Tab.Screen name="Pay" component={PayScreen} />
+      <Tab.Screen
+        options={{
+          title: "Home",
+        }}
+        name="HomeScreen"
+        component={HomeScreen}
+      />
+      <Tab.Screen
+        options={{
+          title: "Notifications",
+        }}
+        name="NotificationsScreen"
+        component={NotificationsScreen}
+      />
+      <Tab.Screen
+        options={{
+          title: "Company",
+        }}
+        name="CompanyScreen"
+        component={CompanyScreen}
+      />
+      <Tab.Screen
+        options={{
+          title: "Pay",
+        }}
+        name="PaymentMethodScreen"
+        component={PaymentMethodScreen}
+      />
     </Tab.Navigator>
   );
 }

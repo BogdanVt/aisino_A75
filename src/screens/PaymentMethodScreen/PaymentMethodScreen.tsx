@@ -9,7 +9,7 @@ import GooglePayIcon from "../../assets/icons/googlepay.svg";
 import OfflineIcon from "../../assets/icons/offline.svg";
 import BiometricIcon from "../../assets/icons/biometric.svg";
 
-const PayScreen = ({ navigation }: { navigation: any }) => {
+const PaymentMethodScreen = ({ navigation }: { navigation: any }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerSection}>
@@ -31,6 +31,7 @@ const PayScreen = ({ navigation }: { navigation: any }) => {
       </View>
       <View style={styles.settingsSection}>
         <DefaultCard
+          onPress={() => navigation.navigate("OfflineModeScreen")}
           horizontal
           Icon={OfflineIcon}
           headerText="Offline mode"
@@ -38,6 +39,7 @@ const PayScreen = ({ navigation }: { navigation: any }) => {
         />
         <DefaultCard
           horizontal
+          onPress={() => navigation.navigate("PreAuthorizationScreen")}
           Icon={BiometricIcon}
           headerText="Pre-authorisation"
           descText="6-digit code checking"
@@ -75,4 +77,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PayScreen;
+export default PaymentMethodScreen;

@@ -55,6 +55,7 @@ const CreditCardScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 30,
     flex: 1,
     backgroundColor: COLORS.blueLight,
     alignItems: "center",
